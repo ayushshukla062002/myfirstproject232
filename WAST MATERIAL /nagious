@@ -1,1 +1,138 @@
 nagios installation
+Nagios installation command
+debain@debain:/tmp$ history
+    1  sudo apt update
+    2  sudo apt updae
+    3  sudo apt update
+    4  ip a
+    5  sudo poweroff
+    6  ip a
+    7  sudo nano /etc/network/interfaces
+    8  sudo systemctl restart networking
+    9  sudo nan /etc/
+   10  cd /etc
+   11  ls
+   12  cd network
+   13  ls
+   14  cd
+   15  ip a
+   16  sudo nano /etc/network/interfaces
+   17  sudo systemctl restart networking
+   18  ip a
+   19  ipa
+   20  sudo nano /etc/ap/sources.list
+   21  sudo nano /etc/apt/sources.list
+   22  sudo systemctl restart network
+   23  sudo nano /etc/apt/sources.list
+   24  sudo systemctl restart networking
+   25  sudo apt update
+   26  sudo poweroff
+   27  ip a
+   28  sudo poweroff
+   29  ip a
+   30  sudo powerof
+   31  sudo poweroff
+   32  ip a
+   33  sudo apt install opehssh-server
+   34  ip a
+   35  sudo mkdir -p /mnt/shared
+   36  sudo poweroff
+   37  ls
+   38  cd
+   39  cd tmp
+   40  cd /tmp
+   41  ls
+   42  cd nagios-4.5.0
+   43  ls
+   44  sudo make all
+   45  sudo make install-group-users
+   46  sudo passwd nagios
+   47  sudo apt update
+   48  sudo apt install -y build-essential libgd-dev openssl libssl-dev unzip apache2 php libapache2-mod-php php-gd libmcrypt-dev libperl-dev daemon
+   49  ./configure --with-httpd-conf=/etc/apache2/sites-enabled
+   50  cd ..
+   51  cd /tmp
+   52  tar -xvzf nagios-4.5.0.tar.gz
+   53  cd nagios-4.5.0
+   54  ./configure --with-httpd-conf=/etc/apache2/sites-enabled
+   55  sudo ./configure --with-httpd-conf=/etc/apache2/sites-enabled
+   56  sudo passwd nagios
+   57  sudo make all
+   58  sudo nak install-roup-users
+   59  sudo nak install-group-users
+   60  sudo make install-group-users
+   61  sudo useradd -m nagios
+   62  sudo groupadd nagcmd
+   63  sudo usermod -a -G nagcmd nagios
+   64  sudo usermod -a -G nagcmd www-data
+   65  sudo make install
+   66  sudo make install-commandmode
+   67  sudo make install-init
+   68  sudo make install-config
+   69  sudo make install-webconf
+   70  sudo make install-groups-users
+   71  sudo make install
+   72  sudo make install-daemoninit
+   73  sudo make install-commandmode
+   74  sudo make install-config
+   75  sudo make install-webconf
+   76  sudo passwd nagios
+   77  sudo usermod -aG nagios www-data
+   78  udo make install
+   79  sudo make install
+   80  ls -l /usr/local
+   81  ls -l /usr/local/nagios
+   82  sudo make install-commandmode
+   83  ls -l /usr/etc/nagious
+   84  ls -l /usr/local/nagious
+   85  ls
+   86  ls -l
+   87  ls -l /usr
+   88  ls -l /usr/local
+   89  ls -l /usr/local/nagious
+   90  ls -l /usr/local/nagios
+   91  sudo make install config
+   92  ls -l /usr/local/nagios/etc/
+   93  tree /etc/apache2/sites-*
+   94  sudo apt install tree
+   95  tree /etc/apache2/sites-*
+   96  sudo apt install-webconfig
+   97  sudo apt install-webconf
+   98  sudo make install-webconf
+   99  sudo a2enmadcgi
+  100  sudo a2enmod cgi
+  101  sudo a2enmod rewrite
+  102  sudo htpasswd -c /usr/local/nagos/etc/
+  103  sudo htpasswd -c /usr/local/nagos/etc/htpasswd.users nagiosadmin
+  104  ls -;  /usr/local/nagos/etc/
+  105  sudo htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+  106  wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.5.0.tar.gz
+  107  sudo apt install wget
+  108  wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.5.0.tar.gz
+  109  cd temp
+  110  cd
+  111  cd ..
+  112  ls
+  113  cd tmp
+  114  wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.5.0.tar.gz
+  115  ls -l
+  116  tar -zxf  nagios-4.5.0.tar.gz
+  117  ls
+  118  cd nagios-4.5.0
+  119  ls
+  120  sudo ./configure
+  121  sudo ./configure --with-httpd-canf=/etc/apache2/site-enabled
+  122  sudo make all
+  123  su
+  124  apt install sudo
+  125  sudo apt update
+  126  sudo apt install make
+  127  sudo passwd root
+  128  su -
+  129  cd /tar
+  130  cd tmp
+  131  cd /tmp
+  132  ls
+  133  history
+
+
