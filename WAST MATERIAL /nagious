@@ -50,7 +50,6 @@ debain@debain:/tmp$ history
    47  sudo apt update
    48  sudo apt install -y build-essential libgd-dev openssl libssl-dev unzip apache2 php libapache2-mod-php php-gd libmcrypt-dev libperl-dev daemon
    49  ./configure --with-httpd-conf=/etc/apache2/sites-enabled
-   50  cd ..
    51  cd /tmp
    52  tar -xvzf nagios-4.5.0.tar.gz
    53  cd nagios-4.5.0
@@ -80,16 +79,11 @@ debain@debain:/tmp$ history
    77  sudo usermod -aG nagios www-data
    78  udo make install
    79  sudo make install
-   80  ls -l /usr/local
    81  ls -l /usr/local/nagios
    82  sudo make install-commandmode
    83  ls -l /usr/etc/nagious
    84  ls -l /usr/local/nagious
    85  ls
-   86  ls -l
-   87  ls -l /usr
-   88  ls -l /usr/local
-   89  ls -l /usr/local/nagious
    90  ls -l /usr/local/nagios
    91  sudo make install config
    92  ls -l /usr/local/nagios/etc/
@@ -102,7 +96,6 @@ debain@debain:/tmp$ history
    99  sudo a2enmadcgi
   100  sudo a2enmod cgi
   101  sudo a2enmod rewrite
-  102  sudo htpasswd -c /usr/local/nagos/etc/
   103  sudo htpasswd -c /usr/local/nagos/etc/htpasswd.users nagiosadmin
   104  ls -;  /usr/local/nagos/etc/
   105  sudo htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
@@ -123,16 +116,17 @@ debain@debain:/tmp$ history
   120  sudo ./configure
   121  sudo ./configure --with-httpd-canf=/etc/apache2/site-enabled
   122  sudo make all
-  123  su
-  124  apt install sudo
-  125  sudo apt update
-  126  sudo apt install make
-  127  sudo passwd root
-  128  su -
-  129  cd /tar
-  130  cd tmp
-  131  cd /tmp
-  132  ls
-  133  history
+ sudo make install-groups-users
+sudo passwd nagios
+    net password 
+    rese tyhe password 
 
+sudo usermod -aG nagios www-data
 
+sudo make install 
+ls -l /usr/local/nagios
+sudo nake install-doemoninit
+
+plugins instl in nagios 
+
+sudo 
