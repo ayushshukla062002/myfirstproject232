@@ -1,0 +1,25 @@
+surikata
+
+sudo which suricata
+sudo apt install suricata
+sudo nano /etc/suricata/suricata.yaml
+	Tag = Linux high speed capture support
+	line no = 
+	LINE = af-packet:
+                - interface: ens33
+
+	rule-files:
+ 	 - suricata.rules
+   	   local.rules
+
+
+
+sudo nano /etc/suricata/rules/local.rules
+	alert icmp any any -> any any (msg:"ping detected"; sid:123; rev:1;)
+
+	
+sudo systemctl restart suricata
+tail -f /var/log/suricata/fast.log
+sudo systemctl status suricata
+ 
+goto DEBAIN 2 and ping surikata meachine
