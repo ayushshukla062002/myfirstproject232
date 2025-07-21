@@ -1,0 +1,17 @@
+#nagios plugins install 
+
+sudo apt-get install -y automake autotools-dev bc build-essential dc gawk gettext libmcrypt-dev libnet-snmp-perl libssl-dev snmp
+ 
+cd /tmp 
+
+wget https://nagios-plugins.org/download/nagios-plugins-2.4.11.tar.gz
+  
+tar -zxf nagios-plugins-2.4.11.tar.gz
+
+ls -l /usr/local/nagios /libexec
+
+sudo ./configure
+sudo make
+sudo make install
+  
+check green tick  in service 
