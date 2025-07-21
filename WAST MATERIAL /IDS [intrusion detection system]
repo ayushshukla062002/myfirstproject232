@@ -1,0 +1,109 @@
+ IDS [intrusion detection system]
+
+
+Install snort 
+
+
+Create a folder <snort>  
+Snortrules-snapshot-2923.tar   7-zip -> extract file 
+
+
+Command  
+[administrator command prompt ]
+Path c:\snort\bin>
+getmac /fo csv /v  [interface]
+Snort -w [ethernet interface]
+
+
+c:\snort\bin
+Snort -i 1 -c c:\snort\etc\snort.conf -l c:\snort\log  -A console
+
+Rerun cmd  [error 1]
+notePAD+:
+Filename :C:\snort\etc\snort.conf
+ Only ipvar replace to var   -> save
+
+Rerun cmd  [error 2]
+Snort -i 1 -c c:\snort\etc\snort.conf -l c:\snort\log  -A console
+Error 
+		Snort_dymaicpreprocessor
+- Fix error
+	-   paste all 14 file 
+
+Command propmt  -> c:/usr/local/lib/sont_dynamicpreprocessor ->  dir /b
+C: \snort\lib\snort_dymaicpreprocessor [go to notepad  and add line 247 ]
+dynamicpreprocessor C:\snort\lib\snort_dynamicpreprocessor\<14filename>  paste it
+
+Rerun cmd  [error 3]
+Snort -i 1 -c c:\snort\etc\snort.conf -l c:\snort\log  -A console
+ Fix Error
+ Dynamicengine c:\snort\lib\snort_dymaicpreprocessor\sf_engine.dil
+
+Rerun cmd  [error 4]
+Snort -i 1 -c c:\snort\etc\snort.conf -l c:\snort\log  -A console
+No such file dict
+dynamicengine  C:\snort\lib\snort_dynamicengine\sf_engine.dll
+Comment  Next line
+
+
+Rerun cmd  [error 5]
+Snort -i 1 -c c:\snort\etc\snort.conf -l c:\snort\log  -A console
+  
+Notepad: 
+Comment out the file  -> does nothing  in IDS mode [ line no 279-283 all 5 file ] 
+
+Rerun cmd  [error 6]
+Snort -i 1 -c c:\snort\etc\snort.conf -l c:\snort\log  -A console
+
+Path: C:\snort-> rules
+Rule file not there
+Create new text file white_list.rules
+
+ Command propmt  -> #pid id got 
+
+
+Line mo 104 
+Error 
+
+ Change to 
+	 Var RULE _PATH ../rules
+	Var SO_RULE _PATH ../so_rules
+	Var PREPRO_RULE_PATH ../pr
+To 
+ 	Var RULE _PATH  c:\snort\rules
+	Var SO_RULE _PATH       ../so_rules
+	Var PREPRO_RULE_PATH ../pr
+
+
+
+Change to 
+Var white _list_path ../rule
+Black
+To 
+Var white _list_path ..\rule
+Black_list_path ..\rule
+
+
+Change to
+Whitelist $white_list path /white_list.rules,\
+Black 
+To
+ Whitelist $white_list path \white_list.rules,\
+Black 
+
+
+Change to
+Include $rule_path/blacklist.rule   [line no 573]
+ To 
+Include $rule_path/blacklist_rule 
+
+
+Rerun cmd  
+Snort -i 1 -c c:\snort\etc\snort.conf -l c:\snort\log  -T  [to test configuration file ]
+
+
+Create a myrule.rules file and add snort.conf file 
+ Write a rules in snort
+alert ip any any -> any any (msg :’’hello sir “; sid: 1000001;)
+    Any -> sources ip  Any -> sources port  any -> destination port
+ any -> destination por
